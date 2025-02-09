@@ -160,12 +160,12 @@ export const SearchField = ({ fromSelected, setFromSelected, toSelected, onSearc
                                     />
                                 </div>
                                 <DatePickers label={"Departure"} />
-                                <IconButton onClick={() => RemoveRow(field.id)} style={{ padding: 0, width: "25%" }}>
+                                <IconButton onClick={() => RemoveRow(field.id)} style={{ padding: 0 }}>
                                     X
                                 </IconButton>
                             </div>
                         ))}
-                        <button onClick={AddRow} className={styles.addButton}>
+                        <button onClick={AddRow} className={styles.addButton} style={{ width: "25%" }} >
                             Add Flight
                         </button>
                     </div>
