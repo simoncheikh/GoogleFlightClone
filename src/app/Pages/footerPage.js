@@ -6,15 +6,15 @@ export const FooterPage = () => {
     return (
         <div className={styles.mainContainer}>
             <div className={styles.topSection}>
-                <Button className={styles.btn} variant='contained'>
+                <Button className={styles.btn} variant='contained' style={{ background: "none", border: "#333 0.3 solid", borderRadius: "20px", color: "#1a73e8", fontSize: "14px" }}>
                     <Language className={styles.icon} />
                     Language · English (United Kingdom)
                 </Button>
-                <Button className={styles.btn} variant='contained'>
+                <Button className={styles.btn} variant='contained' style={{ background: "none", border: "#333 0.3 solid", borderRadius: "20px", color: "#1a73e8", fontSize: "14px" }}>
                     <LocationOn className={styles.icon} />
                     Location · Lebanon
                 </Button>
-                <Button className={styles.btn} variant='contained'>
+                <Button className={styles.btn} variant='contained' style={{ background: "none", border: "#333 0.3 solid", borderRadius: "20px", color: "#1a73e8", fontSize: "14px" }}>
                     <MonetizationOn className={styles.icon} />
                     Currency · LBP
                 </Button>
