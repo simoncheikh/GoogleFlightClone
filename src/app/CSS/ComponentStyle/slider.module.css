@@ -19,7 +19,6 @@
 .leftArrow {
   position: absolute;
   left: -10px;
-  /* Move the arrow outside the slides */
   top: 50%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.5);
@@ -31,11 +30,9 @@
   border-radius: 50%;
 }
 
-/* Custom Right Arrow */
 .rightArrow {
   position: absolute;
   right: -10px;
-  /* Move the arrow outside the slides */
   top: 50%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.5);
@@ -47,7 +44,6 @@
   border-radius: 50%;
 }
 
-/* Hover Effect */
 .leftArrow:hover,
 .rightArrow:hover {
   background: rgba(0, 0, 0, 0.8);

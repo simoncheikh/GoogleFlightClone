@@ -18,10 +18,10 @@ export default function Home() {
   const [toSelected, setToSelected] = useState(null);
   const [departureData, setDepartureData] = useState(null);
   const [returnData, setReturnData] = useState(null);
-  const [searchKey, setSearchKey] = useState(0); // Use a searchKey instead of a boolean
+  const [searchKey, setSearchKey] = useState(0); 
 
   const handleSearchClick = () => {
-    setSearchKey(prevKey => prevKey + 1); // Increment searchKey to trigger a re-fetch
+    setSearchKey(prevKey => prevKey + 1); 
   };
 
   return (
@@ -38,9 +38,9 @@ export default function Home() {
         setDepartureData={setDepartureData}
         returnData={returnData}
         setReturnData={setReturnData}
-        onSearchClick={handleSearchClick} // Pass the search click handler
+        onSearchClick={handleSearchClick}
       />
-      {searchKey === 0 ? ( // Show default components only if searchKey is 0
+      {searchKey === 0 ? ( 
         <>
           <div className={styles.mapContainer}>
             <div className={styles.descStyle}>Find cheap flights from Beirut to anywhere</div>

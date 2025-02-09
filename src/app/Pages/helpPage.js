@@ -51,7 +51,7 @@ export const HelpPage = () => {
                             }
                         </div>))}
                 </div>
-                {selectedInstru && ( // Conditionally render the rightContainer
+                {selectedInstru && ( 
                     <div className={styles.rightContainer}>
                         <div className={styles.rightTitle}>
                             {selectedInstru.title}

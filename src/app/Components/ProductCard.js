@@ -1,11 +1,5 @@
 import styles from "../CSS/ComponentStyle/productCard.module.css";
-// import heart from "../assets/miniHeart.png";
-// import cart from "../assets/miniCart.png";
-// import view from "../assets/view.png";
-// import star from "../assets/star.png";
 import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
 
 export const ProductCard = ({ dataArray }) => {
   const rateStar = [
@@ -48,17 +42,6 @@ export const ProductCard = ({ dataArray }) => {
                   alt="Second Image"
                 />
               </div>
-              {/* <div className={styles.actionButtonContainer}>
-                <div className={styles.buttonContainer}>
-                  <img src={heart} className={styles.cartImage} />
-                </div>
-                <div className={styles.buttonContainer}>
-                  <img src={cart} className={styles.cartImage} />
-                </div>
-                <div className={styles.buttonContainer}>
-                  <img src={view} className={styles.cartImage} />
-                </div>
-              </div> */}
               <div className={styles.detailsContainer}>
                 <div className={styles.itemName}>{row.itemName}</div>
                 <div className={styles.priceContainer}>

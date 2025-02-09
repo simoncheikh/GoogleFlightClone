@@ -214,7 +214,6 @@ export const Dropdown = ({ list, defaultValue, listType, value, onChange }) => {
                                     </Button>
                                 </Stack>
 
-                                {/* Infants in seat */}
                                 <Stack spacing={2} direction="row" justifyContent="center" alignItems="center">
                                     <Button
                                         variant="outlined"

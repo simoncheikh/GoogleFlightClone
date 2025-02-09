@@ -7,17 +7,15 @@
     gap: 10px;
   }
   
-  /* Container for the two Autocomplete fields and swap button */
   .fieldsContainer {
     display: flex;
     align-items: center;
     background: white;
     width: 100%;
-    flex-direction: row; /* Always keep them in a row */
+    flex-direction: row; 
     gap: 10px;
   }
   
-  /* Autocomplete text fields */
   .textField {
     flex: 1;
     background-color: white;
@@ -29,7 +27,6 @@
     width: 100%;
   }
   
-  /* Swap button container and styling */
   .swapContainer {
     background: white;
     z-index: 2;
