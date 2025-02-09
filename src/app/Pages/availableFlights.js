@@ -8,7 +8,7 @@ import PublicIcon from '@mui/icons-material/Public';
 import CastIcon from '@mui/icons-material/Cast';
 import styles from '../CSS/PagesStyle/availableFlights.module.css';
 
-const AvailableFlights = ({ fromSelected, toSelected, departureDateData, returnDate, searchKey  }) => {
+const AvailableFlights = ({ fromSelected, toSelected, departureDateData, returnDate, searchKey }) => {
     const [expanded, setExpanded] = useState(null);
     const [availableFlight, setAvailableFlight] = useState([])
     const [error, setError] = useState(null)
@@ -25,12 +25,13 @@ const AvailableFlights = ({ fromSelected, toSelected, departureDateData, returnD
             const originEntityId = fromSelected?.entityId;
             const destinationEntityId = toSelected?.entityId;
             const departureDate = departureDateData ? departureDateData.format("YYYY-MM-DD") : "None";
+            const returnDataDate = returnDate ? returnDate.format("YYYY-MM-DD") : "None"
             if (!fromSelected || !toSelected || !departureDate) {
                 setError("Please provide all required search parameters.");
                 setLoading(false);
                 return;
             }
-            const url = `https://sky-scrapper.p.rapidapi.com/api/v2/flights/searchFlights?originSkyId=${originSkyId}&destinationSkyId=${destinationSkyId}&originEntityId=${originEntityId}&destinationEntityId=${destinationEntityId}&date=${departureDate}`;
+            const url = `https://sky-scrapper.p.rapidapi.com/api/v2/flights/searchFlights?originSkyId=${originSkyId}&destinationSkyId=${destinationSkyId}&originEntityId=${originEntityId}&destinationEntityId=${destinationEntityId}&date=${departureDate}&returnDate=${returnDataDate}`;
             const options = {
                 method: "GET",
                 headers: {

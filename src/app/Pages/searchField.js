@@ -160,7 +160,7 @@ export const SearchField = ({ fromSelected, setFromSelected, toSelected, onSearc
                                     />
                                 </div>
                                 <DatePickers label={"Departure"} />
-                                <IconButton onClick={() => RemoveRow(field.id)}>
+                                <IconButton onClick={() => RemoveRow(field.id)} style={{ padding: 0, width: "25%" }}>
                                     X
                                 </IconButton>
                             </div>
@@ -172,7 +172,7 @@ export const SearchField = ({ fromSelected, setFromSelected, toSelected, onSearc
                 )}
             </div>
             <div className={styles.searchButtonContainer}>
-                <Button variant='contained' className={styles.searchBtn} onClick={onSearchClick}>
+                <Button variant='contained' className={styles.searchBtn} style={{ borderRadius: "25px" }} onClick={onSearchClick}>
                     Search
                 </Button>
             </div>
