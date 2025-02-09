@@ -1,0 +1,3 @@
+[submodule "GoogleFlightClone"]
+  path = GoogleFlightClone
+  url = https://github.com/simoncheikh/GoogleFlightClone.git
