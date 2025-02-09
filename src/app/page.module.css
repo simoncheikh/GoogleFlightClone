@@ -1,0 +1,50 @@
+.page {
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.themeContainer {
+  height: 23.92578125vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.descStyle {
+  font-family: "Google Sans", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: #202124;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  display: flex;
+  justify-content: flex-start;
+  width: 85%;
+}
+
+.mapContainer {
+  width: 87%;
+  height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .page {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    width: 100%;
+  }
+
+  .mapContainer {
+    padding-top: 6%;
+  }
+}

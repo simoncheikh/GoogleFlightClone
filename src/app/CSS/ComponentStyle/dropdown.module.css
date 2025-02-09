@@ -1,0 +1,62 @@
+/* dropdown.module.css */
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+}
+
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+}
+
+.mainBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top: 10px;
+  gap: 20%;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+.imageIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.numberBtn {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.rowName {
+  display: flex;
+  flex-direction: column;
+}
+
+.span {
+  font-family: Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 16px;
+  color: var(--ta884a309a24f44f4)
+}
+
+.warningAlert {
+  color: #FF0000;
+  padding: 16px 16px 16px 16px;
+  display: flex;
+  gap: 5px;
+}

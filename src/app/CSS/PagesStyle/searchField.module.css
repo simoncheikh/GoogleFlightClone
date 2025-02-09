@@ -1,0 +1,164 @@
+.mainDiv {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px 0 rgba(50, 115, 165, 0.3), 0 4px 8px 3px rgba(60, 64, 67, 0.15);
+    background: #fff;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
+}
+
+.searchField {
+    padding: 1%;
+    padding-bottom: 5%;
+}
+
+.oneCityContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.airportContainer {
+    width: 65%;
+}
+
+.datePickerContainer {
+    width: 35%;
+    display: flex;
+    gap: 10px;
+}
+
+.multiCityContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.multiCityRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.swapContainer {
+    background: white;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swapButton {
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-bottom: none;
+    border-top: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.addButton {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.searchButtonContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.searchBtn {
+    width: 10%;
+    height: 50px;
+    border-radius: 25px;
+    position: absolute;
+    bottom: -25px;
+}
+
+@media (max-width: 1024px) {
+    .mainDiv {
+        width: 95%;
+    }
+
+    .mainContainer {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .searchBtn {
+        width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .oneCityContainer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .multiCityRow {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .airportContainer,
+    .datePickerContainer {
+        width: 100%;
+    }
+
+    .datePickerContainer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .searchButtonContainer {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .searchBtn {
+        width: 30%;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .mainContainer {
+        flex-direction: row;
+        width: 100%;
+        gap: 0;
+        padding: 0;
+    }
+
+    .mainDiv {
+        width: 100%;
+    }
+
+    .addButton {
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,49 @@
+/*themePage.module.css*/
+
+.mainDiv {
+    position: relative;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+.mainPic {
+    background-image: url("https://www.gstatic.com/travel-frontend/animation/hero/flights_nc_4.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: white;
+    font-size: 2rem;
+}
+
+.title {
+    color: #202124;
+    font-size: 55px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    line-height: 44px;
+    /* padding-bottom: 8%; */
+}
+
+@media (max-width: 1024px) {
+    .title{
+        /* padding-bottom: 2%; */
+    }
+
+}
+
+@media (max-width: 768px) {
+    .title{
+        /* padding-bottom: 2%; */
+    }
+}
+
+@media (max-width: 480px) {
+    .title{
+        font-size: 30px;
+    }
+
+}

@@ -1,0 +1,138 @@
+/*productCard.module.css */
+
+.mainView {
+  width: 96%;
+  margin: auto;
+}
+
+.slideContainer {
+  margin: 20px;
+  
+}
+
+.cardContainer {
+  height: 450px;
+  padding: 5px;
+  width: 212px;
+  overflow: hidden;
+  display: flex;
+  gap: 10px; 
+}
+
+.salesContainer {
+  background-color: #3cb371;
+  color: white;
+  font-family: outfit;
+  top: 15px;
+  width: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  background-color: white;
+}
+
+.firstImageContainer {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+}
+
+.image {
+  width: 100%;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.secondImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.firstImageContainer:hover .secondImage {
+  opacity: 1;
+}
+
+.firstImageContainer:hover .firstImage {
+  opacity: 0;
+}
+
+.actionButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cartImage {
+  width: 20px;
+  height: 20px;
+}
+
+.firstImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer {
+  background-color: #f6f7f2;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.itemName {
+  font-family: outfit;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.priceContainer {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.productPriceName {
+  font-family: outfit;
+  color: #e14233;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.comparePriceName {
+  font-family: outfit;
+  color: #808080;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: line-through;
+}
+
+.rateContainer {
+  display: flex;
+  gap: 5px;
+  margin-top: 12px;
+}
+
+/* @font-face {
+  font-family: gochiHand;
+  src: url("../../assets/GochiHand-Regular.ttf");
+}
+
+@font-face {
+  font-family: outfit;
+  src: url("../../assets/Outfit-SemiBold.ttf");
+} */

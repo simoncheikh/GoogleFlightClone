@@ -1,0 +1,71 @@
+/*footerPage.module.css*/
+.mainContainer {
+    width: 87%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.topSection {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    text-transform: none;
+    font-size: 14px;
+    color: #1a73e8;
+    background: none;
+    border: #333 0.3 solid;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.icon {
+    margin-right: 5px;
+}
+.linkSection {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.linkSection a {
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 14px;
+}
+
+.linkSection a:hover {
+    text-decoration: underline;
+}
+
+.disclaimer {
+    max-width: 800px;
+    font-size: 12px;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.disclaimer a {
+    color: #0073e6;
+}
+
+@media (max-width: 1024px) {
+    .topSection{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 480px) {
+
+}
